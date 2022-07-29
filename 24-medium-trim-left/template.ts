@@ -1,1 +1,1 @@
-type TrimLeft<S> = S extends `${WhiteSpace}${infer T}` ? TrimLeft<T> : S
+type TrimLeft<S extends string> = S extends `${WhiteSpace}${infer T}` ? TrimLeft<T> : S
