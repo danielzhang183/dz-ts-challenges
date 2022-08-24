@@ -10,7 +10,7 @@ type cases = [
   Expect<Equal<1 | 2, MyReturnType<typeof fn1>>>,
 ]
 
-type ComplexObject = {
+interface ComplexObject {
   a: [12, 'foo']
   bar: 'hello'
   prev(): number
